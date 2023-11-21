@@ -13,7 +13,7 @@ export const props: WebhookHeadersProps = {
     asyncEvents: [],
     isActive: true,
     name: "Test webhook",
-    targetUrl: "http://localhost:3000",
+    targetUrl: "http://172.203.97.190:3000",
     subscriptionQuery: "",
     customHeaders,
   },

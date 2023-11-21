@@ -12,7 +12,7 @@ Run nginx from Docker and bind it to port on your machine (in this example, it i
 docker run --publish 8080:80 --env "API_URL=<YOUR_API_URL>" saleor-dashboard
 ```
 
-Enter `http://localhost:8080/` to use the dashboard.
+Enter `http://172.203.97.190:8080/` to use the dashboard.
 
 If you want to change `API_URL` in runtime, you can use (assuming you have a running container named `saleor-dashboard`):
 

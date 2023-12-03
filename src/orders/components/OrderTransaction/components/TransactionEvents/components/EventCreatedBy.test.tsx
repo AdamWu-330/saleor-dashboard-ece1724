@@ -26,7 +26,7 @@ describe("EventCreatedBy", () => {
     expect(link).toHaveTextContent(appAvatar.name);
     expect(link).toHaveProperty(
       "href",
-      "http://172.203.97.190" +
+      "http://10.142.0.2" +
         AppPaths.resolveAppPath(encodeURIComponent(appAvatar.id)),
     );
   });
@@ -43,7 +43,7 @@ describe("EventCreatedBy", () => {
     expect(link).toHaveTextContent(staffMemberAvatar.lastName);
     expect(link).toHaveProperty(
       "href",
-      "http://172.203.97.190" +
+      "http://10.142.0.2" +
         staffMemberDetailsPath(encodeURIComponent(staffMemberAvatar.id)),
     );
   });

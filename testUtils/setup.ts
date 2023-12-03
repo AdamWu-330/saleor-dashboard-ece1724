@@ -22,9 +22,9 @@ document.createRange = () => {
 };
 
 window.__SALEOR_CONFIG__ = {
-  API_URL: "http://172.203.97.190:8000/graphql/",
+  API_URL: "http://10.142.0.2:8000/graphql/",
   APP_MOUNT_URI: "/",
-  APPS_MARKETPLACE_API_URI: "http://172.203.97.190:3000",
+  APPS_MARKETPLACE_API_URI: "http://10.142.0.2:3000",
   APPS_TUNNEL_URL_KEYWORDS: ".ngrok.io;.saleor.live",
   IS_CLOUD_INSTANCE: "true",
 };

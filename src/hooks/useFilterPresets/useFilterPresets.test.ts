@@ -5,7 +5,7 @@ import { useFilterPresets } from "./useFilterPresets";
 const mockNavigate = jest.fn();
 jest.mock("@dashboard/hooks/useNavigator", () => () => mockNavigate);
 
-const baseUrl = "http://172.203.97.190";
+const baseUrl = "http://10.142.0.2";
 
 describe("useFilterPresets", () => {
   const originalWindowLocation = window.location;

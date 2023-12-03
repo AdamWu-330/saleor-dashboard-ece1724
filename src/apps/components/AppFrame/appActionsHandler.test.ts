@@ -45,7 +45,7 @@ jest.spyOn(ExternalAppContext, "useExternalApp").mockImplementation(() => ({
 
 jest
   .spyOn(dashboardConfig, "getAppMountUri")
-  .mockImplementation(() => "http://172.203.97.190:3000");
+  .mockImplementation(() => "http://10.142.0.2:3000");
 
 jest.spyOn(ReactIntl, "useIntl").mockImplementation(
   // @ts-expect-error - only mock required method
@@ -74,8 +74,8 @@ describe("AppActionsHandler", function () {
     delete window.location;
     // @ts-expect-error
     window.location = {
-      href: "http://172.203.97.190:3000",
-      hostname: "172.203.97.190",
+      href: "http://10.142.0.2:3000",
+      hostname: "10.142.0.2",
       pathname: "/apps/XYZ/app",
     };
   });
@@ -136,7 +136,7 @@ describe("AppActionsHandler", function () {
       expect(mockHistoryPushState).toHaveBeenCalledWith(
         null,
         "",
-        "http://172.203.97.190:3000/apps/XYZ/app/foo/bar",
+        "http://10.142.0.2:3000/apps/XYZ/app/foo/bar",
       );
     });
   });
@@ -183,7 +183,7 @@ describe("AppActionsHandler", function () {
 
         expect(mockWindowOpen).toHaveBeenCalledTimes(1);
         expect(mockWindowOpen).toHaveBeenCalledWith(
-          "http://172.203.97.190:3000/orders",
+          "http://10.142.0.2:3000/orders",
         );
       });
 
@@ -204,7 +204,7 @@ describe("AppActionsHandler", function () {
 
         expect(mockWindowOpen).toHaveBeenCalledTimes(1);
         expect(mockWindowOpen).toHaveBeenCalledWith(
-          "http://172.203.97.190:3000/apps/XYZ/app/config",
+          "http://10.142.0.2:3000/apps/XYZ/app/config",
         );
       });
     });
@@ -264,7 +264,7 @@ describe("AppActionsHandler", function () {
         expect(mockHistoryPushState).toHaveBeenCalledWith(
           null,
           "",
-          "http://172.203.97.190:3000/apps/XYZ/app/config",
+          "http://10.142.0.2:3000/apps/XYZ/app/config",
         );
       });
     });

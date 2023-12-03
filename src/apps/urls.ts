@@ -119,7 +119,7 @@ export const AppUrls = {
   ) => {
     const apiUrl = new URL(getApiUrl(), window.location.origin).href;
     /**
-     * Use host to preserve port, in case of multiple Saleors running on 172.203.97.190
+     * Use host to preserve port, in case of multiple Saleors running on 10.142.0.2
      */
     const apiUrlHost = new URL(apiUrl).host;
 

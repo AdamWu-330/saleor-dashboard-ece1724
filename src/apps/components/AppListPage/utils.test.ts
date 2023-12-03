@@ -196,8 +196,8 @@ describe("App List verified installed apps util", () => {
         name: "app local",
         type: AppTypeEnum.THIRDPARTY,
         version: "1.0.0",
-        appUrl: "http://172.203.97.190:3000",
-        manifestUrl: "http://172.203.97.190:3000/api/manifest",
+        appUrl: "http://10.142.0.2:3000",
+        manifestUrl: "http://10.142.0.2:3000/api/manifest",
         permissions: [
           {
             __typename: "Permission",
@@ -285,8 +285,8 @@ describe("App List verified installable marketplace apps util", () => {
         name: "app local",
         type: AppTypeEnum.THIRDPARTY,
         version: "1.0.0",
-        appUrl: "http://172.203.97.190:3000",
-        manifestUrl: "http://172.203.97.190:3000/api/manifest",
+        appUrl: "http://10.142.0.2:3000",
+        manifestUrl: "http://10.142.0.2:3000/api/manifest",
         permissions: [
           {
             __typename: "Permission",

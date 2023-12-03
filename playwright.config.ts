@@ -13,7 +13,7 @@ export default defineConfig({
   reporter: "html",
   // webServer: {
   //   command: "npm run dev",
-  //   url: "http://172.203.97.190:9000/",
+  //   url: "http://10.142.0.2:9000/",
   //   reuseExistingServer: !process.env.CI,
   // },
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */

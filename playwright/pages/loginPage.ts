@@ -41,8 +41,8 @@ export class LoginPage {
   async goto() {
     const BASE_URL = process.env.BASE_URL;
     const loginPageUrl =
-      BASE_URL === "http://172.203.97.190:9000/"
-        ? "http://172.203.97.190:9000/"
+      BASE_URL === "http://10.142.0.2:9000/"
+        ? "http://10.142.0.2:9000/"
         : "/dashboard";
     await this.page.goto(loginPageUrl);
   }
